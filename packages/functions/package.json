@@ -1,0 +1,19 @@
+{
+  "name": "@my-sst-app/functions",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "sst bind vitest",
+    "typecheck": "tsc -noEmit"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.145",
+    "@types/node": "^22.7.4",
+    "sst": "^2.43.7",
+    "vitest": "^2.1.1"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.658.1",
+    "@aws-sdk/lib-dynamodb": "^3.658.1"
+  }
+}
