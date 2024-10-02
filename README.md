@@ -8,7 +8,7 @@ Develop a CRUD (Create, Read, Update, Delete) microservice deployable on AWS Lam
 npm i
 
 npx sst dev
-(enter the name you'd like for your personal stage, or just use the default. This may take a while)
+(enter the name you would like for your personal stage, or just use the default. This may take a while)
 ```
 
 # Usage
