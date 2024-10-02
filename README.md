@@ -26,9 +26,16 @@ This is your base url for testing the api.
 
 ```sh
 POST <url>/users
+This adds a new user to the DB. It doesn't let you add more than three email addresses and auto dedupes them.
+
 GET <url>/users/<userID>
+This lets you get any existing user in the db.
+
 PUT <url>/users/<userID>
+This lets your update the fields of any user. It allows you to add new email addresses but not remove them. This was done by treating the email property as emails to be added and auto dedupes them. 
+
 DELETE <url>/users/<userID>
+This lets you delete any existing user in the db.
 
 For the POST and PUT endpoints, you need to add a body with the following properties:
 {
