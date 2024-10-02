@@ -26,7 +26,7 @@ This is your base url for testing the api.
 
 ```sh
 POST <url>/users
-This adds a new user to the DB. It doesn't let you add more than three email addresses and auto dedupes them.
+This adds a new user to the DB. It does not let you add more than three email addresses and auto dedupes them.
 
 GET <url>/users/<userID>
 This lets you get any existing user in the db.
