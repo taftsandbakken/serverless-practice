@@ -18,6 +18,7 @@ export function API({ stack }: StackContext) {
       function: {
         environment: {
           TABLE_NAME: userTable.tableName,
+          STAGE: stack.stage
         },
         permissions: [userTable]
       },

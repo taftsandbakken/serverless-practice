@@ -18,8 +18,8 @@ import * as helper from "./helper";
 
 const client = new DynamoDBClient({});
 const dynamoDb = DynamoDBDocumentClient.from(client);
-
-const USER_TABLE_NAME = "tafts-my-sst-app-UsersTable";
+const stage = process.env.STAGE || "unknown";
+const USER_TABLE_NAME = `${stage}-my-sst-app-UsersTable`;
 
 const createUserParams = (userID: string, userName: string, dob: string, emails: string[]): PutCommandInput => {
   return {
